@@ -1,6 +1,6 @@
 {
   "name": "nobelium",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,7 +12,7 @@
     "@notionhq/client": "^1.0.0",
     "classnames": "^2.3.1",
     "cookies-next": "^2.1.1",
-    "dayjs": "^1.10.7",
+    "dayjs": "^1.11.10",
     "feed": "^4.2.2",
     "gitalk": "^1.7.2",
     "lodash": "^4.17.21",
@@ -27,6 +27,6 @@
     "use-ackee": "^3.0.0"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": "18.x"
   }
 }
