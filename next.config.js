@@ -1,33 +1,9 @@
 module.exports = {
+  staticPageGenerationTimeout: 300,
   images: {
-    domains: ['gravatar.com']
-  },
-  eslint: {
-    // dirs: ['components', 'layouts', 'lib', 'pages']
-  },
-  async headers() {
-    return [
-      {
-        source: '/:path*{/}?',
-        headers: [
-          {
-            key: 'Permissions-Policy',
-            value: 'interest-cohort=()'
-          }
-        ]
-      }
-    ]
-  },
-  transpilePackages: ['dayjs']
-  // webpack: (config, { dev, isServer }) => {
-  //   // Replace React with Preact only in client production build
-  //   if (!dev && !isServer) {
-  //     Object.assign(config.resolve.alias, {
-  //       react: 'preact/compat',
-  //       'react-dom/test-utils': 'preact/test-utils',
-  //       'react-dom': 'preact/compat'
-  //     })
-  //   }
-  //   return config
-  // }
+    domains: ['www.notion.so', 'notion.so', 'images.unsplash.com', 'pbs.twimg.com', 'abs.twimg.com', 's3.us-west-2.amazonaws.com', 'transitivebullsh.it'],
+    formats: ['image/avif', 'image/webp'],
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  }
 }
